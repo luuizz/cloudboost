@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialiased;
+    font-family: var(--font-texts);
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--white);
+    background: linear-gradient(122deg, #030009 -11.05%, #03000A 104.5%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+button {
+    all: unset;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
