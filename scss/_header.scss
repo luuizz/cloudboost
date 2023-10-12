@@ -1,0 +1,36 @@
+header {
+    margin-top: 1.6rem;
+    position: sticky;
+    top: 1.6rem;
+    z-index: 2025;
+    .container {
+        .content-header {
+            border-radius: 10rem;
+            border: 0.1rem solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(0.35rem);
+            @include flexCenterJustify;
+            padding: 0.8rem 0.8rem 0.8rem 2.1rem;
+            .left {
+                @include flex-center;
+                gap: 1.6rem;
+                a {
+                    @include flex-center;
+                    gap: 0.8rem;
+                    span {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: var(--base);
+                        color: var(--gray-200);
+                        transition: color .3s ease;
+                    }
+                    &:hover {
+                        span {
+                            color: var(--purple-10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
