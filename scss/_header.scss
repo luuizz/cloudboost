@@ -32,6 +32,25 @@ header {
                     }
                 }
             }
+            .btn-mobile {
+                display: none;
+            }
+        }
+    }
+    @include responsive ('mobile') {
+        .container {
+            .content-header {
+                padding: 2rem 2.5rem;
+                .logo {
+                    max-width: 13.5rem;
+                }
+                .left {
+                    display: none;
+                }
+                .btn-mobile {
+                    display: block;
+                }
+            }
         }
     }
 }

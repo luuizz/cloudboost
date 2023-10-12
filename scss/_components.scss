@@ -31,6 +31,20 @@
             color: var(--gray-300);
         }
     }
+    @include responsive ('tablet') {
+        margin: 0 auto;
+        text-align: left;
+    }
+    @include responsive ('mobile') {
+        justify-content: space-between;
+        input {
+            max-width: 15rem;
+        }
+        .btn-primary {
+            padding: 1.2rem 2rem;
+            font-size: 1.6rem;
+        }
+    }
 }
 
 .card-recurso {
@@ -60,6 +74,18 @@
             line-height: var(--base);
         }
     }
+    @include responsive ('laptop') {
+        max-width: 100%;
+    }
+    @include responsive ('tablet') {
+        .icon {
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        .texts {
+            text-align: center;
+        }
+    }
 }
 
 .review {
@@ -80,5 +106,8 @@
                 color: var(--gray-600);
             }
         }
+    }
+    @include responsive ('tablet') {
+        justify-content: center;
     }
 }

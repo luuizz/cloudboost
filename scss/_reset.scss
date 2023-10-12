@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
     color: var(--white);
     background: linear-gradient(122deg, #030009 -11.05%, #03000A 104.5%);
 }
@@ -30,4 +31,8 @@ button {
 
 ul {
     list-style: none;
+}
+
+.none {
+    display: none;
 }
